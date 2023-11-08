@@ -1,8 +1,10 @@
 # terraform_webapp-project1
  This is basic webapp project for terraform learning 
+ 
  In this project you will get a chance to learn the deployment of  the static web page  on Linux aws instance 
 **Requirements** : 
 Need AWS free account 
+
 GitHub account (optional )
 
 **Steps for creation of aws infrastructure using terraform**  : 
