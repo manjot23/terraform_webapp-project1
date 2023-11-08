@@ -10,13 +10,20 @@ GitHub account (optional )
 Used a local backend but you can use AWS s3 +DynamoDB as remote backend or Terraform cloud .
 
 Creating following  AWS resources with terraform : 
+
 Custom defined VPC (including private and public clouds in multiple availability zones)
+
 **Internet gateway**: used to communicate between the instances and internet through load balancer .
+
 (In by default vpc –internet gateway is automatically created .)
+
 **Security groups** – used to allow and block the inbound and outbound traffic.
+
 **RDS instance** –Database instance created in private subnet to store web application files for future .
+
 **EC2 instances**–Create two linux virtual machines and installed Apache server to run the static web page 
 By default the inbound rules are not allowed and in order to allow traffic from internet we will configure inbound rules through security groups 
+
 **Application load balancer** – works on layer 7 -- works on  protocols HTTPS/HTTPS (to access internet )
 •	ALB Requirements : 1vpc and 2 availability zones and one subnet in each zone where ec2 machine run python server/app server to run application 
 •	Have to select which ec2 traffic route towards internet with help of load balancer 
