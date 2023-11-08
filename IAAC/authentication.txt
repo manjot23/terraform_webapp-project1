@@ -1,0 +1,8 @@
+AWS provider authentication (by avoiding hardcoding the access and secret keys in terraform code )
+Require: 1.aws cli download on local machine which gives a chance to keep credentials at common place in work env –
+Windows--- %USERPROFILE%\.aws\config
+Linux and mac OS  -$HOME/.aws/config and $HOME/.aws/credentials
+2. To verify if aws installed run aws on cmd
+Therefore terraform look a the same location for credentials .. 
+3 Type : aws configure in terminal to  configure access and secret keys through aws cli and then run terraform plan /apply (in my case it is C:\Users\manjo\.aws) 
+
